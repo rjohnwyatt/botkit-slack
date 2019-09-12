@@ -4,7 +4,7 @@ COPY . /app
 WORKDIR /app
 RUN rm -rf ./node_modules
 RUN npm install
-EXPOSE 8000
+EXPOSE 3000
 USER nobody
 ENTRYPOINT ["npm"]
 CMD ["tart"]
